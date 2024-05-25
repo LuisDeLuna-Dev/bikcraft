@@ -7,8 +7,9 @@
 
   <title>Contato | Bikcraft</title>
   <meta name="description" content="Termos e Condições" />
-
-  <link rel="stylesheet" href="./css/style.css" />
+  
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -77,11 +78,11 @@
             <label for="telefone">Telefone</label>
             <input type="text" id="telefone" name="telefone" placeholder="(21) 99999-9999" />
           </div>
-          <div>
+          <div class="col-2">
             <label for="email">Email</label>
             <input type="text" id="email" name="email" placeholder="contato@email.com" />
           </div>
-          <div>
+          <div class="col-2">
             <label for="mensagem">Mensagem</label>
             <textarea rows="5" id="mensagem" name="mensagem" placeholder="O que você precisa?"></textarea>
           </div>
